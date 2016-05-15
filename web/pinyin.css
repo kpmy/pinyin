@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+}
+
+#container {
+  width: 100%;
+  height: calc(100% - 20px);
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#text {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 96pt;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#control {
+  padding: 10px;
+}

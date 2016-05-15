@@ -1,0 +1,7 @@
+name: pinyin
+version: 0.0.1
+description: chinese learn
+dependencies:
+  browser: any
+dev_dependencies:
+#  unittest: any
