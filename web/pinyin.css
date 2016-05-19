@@ -9,7 +9,7 @@ body {
 }
 
 #container {
-  width: 300px;
+  width: 100%;
   height: calc(100% - 20px);
   position: relative;
   border: 1px solid #ccc;
@@ -34,6 +34,6 @@ body {
 }
 
 #control {
-  width: 300px;
+  width: 100%;
   padding: 10px;
 }

@@ -3,3 +3,4 @@ packages
 *.ipr
 *.iws
 .packages
+/pubspec.lock
