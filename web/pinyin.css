@@ -9,7 +9,7 @@ body {
 }
 
 #container {
-  width: 100%;
+  width: 300px;
   height: calc(100% - 20px);
   position: relative;
   border: 1px solid #ccc;
@@ -26,6 +26,14 @@ body {
   user-select: none;
 }
 
+#tip {
+  margin: 10px;
+  transform: scale(-1, 1);
+  font-size: 8pt;
+  color: gray;
+}
+
 #control {
+  width: 300px;
   padding: 10px;
 }
