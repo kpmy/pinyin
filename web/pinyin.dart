@@ -9,6 +9,7 @@ var tip = querySelector("#tip");
 var a = querySelector("#a");
 var b = querySelector("#b");
 var c = querySelector("#c");
+var sw = querySelector("#switch");
 
 var data = [];
 void next(){
@@ -37,11 +38,11 @@ void next(){
       }
     }
   }
-  a.attributes["value"] = data[variants[0]][dataval];
+  a.text = data[variants[0]][dataval];
   a.attributes["data-answer"] = variants[0].toString();
-  b.attributes["value"] = data[variants[1]][dataval];
+  b.text = data[variants[1]][dataval];
   b.attributes["data-answer"] = variants[1].toString();
-  c.attributes["value"] = data[variants[2]][dataval];
+  c.text = data[variants[2]][dataval];
   c.attributes["data-answer"] = variants[2].toString();
 }
 
@@ -96,11 +97,26 @@ void answer(int variant){
   }
 }
 
+void switchTo(){
+  if(datasym == 0){
+    datasym = 1;
+    dataval = 0;
+    sw.text = "putonghua";
+  } else {
+    datasym = 0;
+    dataval = 1;
+    sw.text = "pinyin";
+  }
+  initScore();
+  nextSym();
+}
+
 void main() {
   a.onClick.listen((e) => answer(int.parse(a.attributes["data-answer"])));
   b.onClick.listen((e) => answer(int.parse(b.attributes["data-answer"])));
   c.onClick.listen((e) => answer(int.parse(c.attributes["data-answer"])));
 
+  sw.onClick.listen((e) => switchTo());
   initScore();
   nextSym();
 }

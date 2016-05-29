@@ -1,5 +1,5 @@
-const datasym = 0;
-const dataval = 1;
+var datasym = 0;
+var dataval = 1;
 const datatip = 2;
 
 const t1 = '\u0304'; // ровный
