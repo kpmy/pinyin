@@ -47,11 +47,3 @@ body {
   border: 0px none;
   outline: 0px none;
 }
-
-.button:hover {
-  background: #74A599;
-}
-
-.button:active {
-  background: #F6A953;
-}
